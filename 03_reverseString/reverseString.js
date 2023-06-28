@@ -7,3 +7,11 @@ const reverseString = function(word) {
 
 // Do not edit below this line
 module.exports = reverseString;
+
+
+/*
+streamlined solution:
+const reverseString = function (string) {
+  return string.split("").reverse().join("");
+};
+*/
