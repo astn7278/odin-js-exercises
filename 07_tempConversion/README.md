@@ -4,7 +4,15 @@ Write two functions that convert temperatures from Fahrenheit to Celsius, and vi
 ```
 convertToCelsius(32) // fahrenheit to celsius, should return 0
 
-convertToFahrenheit(0) // celsius to fahrenheit, should return 32
+const convertToCelsius = function(f) {
+  f = ((f - 32) * 0.1111);
+  return f;
+};
+
+const convertToFahrenheit = function(c) {
+  c = (c * 1.8 + 32)
+  return c;
+}; // celsius to fahrenheit, should return 32
 ```
 
 Because we are human, we want the result temperature to be rounded to one decimal place: i.e., `convertToCelsius(100)` should return `37.8` and not `37.77777777777778`.
